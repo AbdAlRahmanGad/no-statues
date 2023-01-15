@@ -16,7 +16,7 @@ let observer = new MutationObserver((mutations) => {
   mutations.forEach((mutation) => {
     // If no new nodes were added, return.
     if (!mutation.addedNodes) return
-    let statusButton = document.querySelector('div[title="status-v3"]');
+    let statusButton = document.querySelector('div[title="الحالة"]');
     // Else if now the Status Button exists, set it's display to none and finished the observer.
     if (statusButton !=  null){
       statusButton.style.display = 'none';
